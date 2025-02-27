@@ -3,7 +3,7 @@ package main
 import (
 	"context"
 
-	"github.com/openai/openai-go"
+	"github.com/azber/openai-go"
 )
 
 // Mock function to simulate weather data retrieval

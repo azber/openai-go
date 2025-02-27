@@ -3,8 +3,8 @@
 package openai
 
 import (
-	"github.com/openai/openai-go/internal/apierror"
-	"github.com/openai/openai-go/shared"
+	"github.com/azber/openai-go/internal/apierror"
+	"github.com/azber/openai-go/shared"
 )
 
 type Error = apierror.Error

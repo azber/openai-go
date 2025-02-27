@@ -13,7 +13,7 @@ import (
 
 	"github.com/tidwall/sjson"
 
-	"github.com/openai/openai-go/internal/param"
+	"github.com/azber/openai-go/internal/param"
 )
 
 var encoders sync.Map // map[encoderEntry]encoderFunc
