@@ -10,9 +10,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/openai/openai-go"
-	"github.com/openai/openai-go/internal/testutil"
-	"github.com/openai/openai-go/option"
+	"github.com/azber/openai-go"
+	"github.com/azber/openai-go/internal/testutil"
+	"github.com/azber/openai-go/option"
 )
 
 func TestImageNewVariationWithOptionalParams(t *testing.T) {

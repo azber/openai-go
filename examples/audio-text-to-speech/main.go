@@ -4,8 +4,8 @@ import (
 	"context"
 	"time"
 
+	"github.com/azber/openai-go"
 	"github.com/ebitengine/oto/v3"
-	"github.com/openai/openai-go"
 )
 
 func main() {

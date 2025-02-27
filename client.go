@@ -7,8 +7,8 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/openai/openai-go/internal/requestconfig"
-	"github.com/openai/openai-go/option"
+	"github.com/azber/openai-go/internal/requestconfig"
+	"github.com/azber/openai-go/option"
 )
 
 // Client creates a struct with services and top level methods that help with
