@@ -699,18 +699,22 @@ type ChatCompletionChunkChoicesDelta struct {
 	Role      ChatCompletionChunkChoicesDeltaRole       `json:"role"`
 	ToolCalls []ChatCompletionChunkChoicesDeltaToolCall `json:"tool_calls"`
 	JSON      chatCompletionChunkChoicesDeltaJSON       `json:"-"`
+
+	// The content of the reasoning message.
+	ReasoningContent string `json:"reasoning_content,nullable"`
 }
 
 // chatCompletionChunkChoicesDeltaJSON contains the JSON metadata for the struct
 // [ChatCompletionChunkChoicesDelta]
 type chatCompletionChunkChoicesDeltaJSON struct {
-	Content      apijson.Field
-	FunctionCall apijson.Field
-	Refusal      apijson.Field
-	Role         apijson.Field
-	ToolCalls    apijson.Field
-	raw          string
-	ExtraFields  map[string]apijson.Field
+	Content          apijson.Field
+	ReasoningContent apijson.Field
+	FunctionCall     apijson.Field
+	Refusal          apijson.Field
+	Role             apijson.Field
+	ToolCalls        apijson.Field
+	raw              string
+	ExtraFields      map[string]apijson.Field
 }
 
 func (r *ChatCompletionChunkChoicesDelta) UnmarshalJSON(data []byte) (err error) {
